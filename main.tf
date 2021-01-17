@@ -3,8 +3,8 @@ provider "aws" {
 }
 
 resource "aws_db_subnet_group" "dbmediawiki" {
-  name       = "public subnet"
-  subnet_ids = ["subnet-0698441978a443411"]
+  name       = "db subnet"
+  subnet_ids = ["subnet-019b4626cab46c2d4","subnet-0becdac09719abfb5"]
 }
 
 # Create a database server
