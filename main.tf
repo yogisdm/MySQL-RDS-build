@@ -10,7 +10,6 @@ resource "aws_db_instance" "default" {
   name           = "initial_db"
   username       = "rootuser"
   password       = "rootpasswd"
-  endpoint       = "mysql-example.com:3306"
   parameter_group_name = "default.mysql5.7"
   allocated_storage    = 20
   storage_type         = "gp2"
