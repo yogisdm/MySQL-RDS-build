@@ -20,7 +20,7 @@ pipeline {
 	
     stage('MySQL deploy') {
       steps {
-        sh 'terraform apply'
+        sh 'terraform apply -input=true'
 	      
       }
     }
