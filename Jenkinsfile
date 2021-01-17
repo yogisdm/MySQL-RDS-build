@@ -13,13 +13,14 @@ pipeline {
     stage('terraform version') {
       steps {
         sh 'terraform --version'
-		sh 'terraform plan'
+        sh 'terraform init'
+	sh 'terraform plan'
       }
     }
 	
     stage('MySQL deploy') {
       steps {
-        sh 'terraform run'
+        sh 'terraform apply'
 	      
       }
     }
