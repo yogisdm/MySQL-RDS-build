@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_db_subnet_group" "dbmediawiki" {
-  name       = "Public Subnet"
+  name       = "public subnet"
   subnet_ids = ["subnet-0698441978a443411"]
 }
 
